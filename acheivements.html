@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Achievements</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <h4 style="text-align: center">ACHIEVEMENTS</h4>
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    </head>
+    <body>
+        <div class="containers counter-section">
+        <div class="row text-center">
+            <div class="col-md-3 counter-box">
+               <div class="iconbox"> <i class="fa fa-clock-o" aria-hidden="true"></i></div>
+            <p class="counter">17</p>
+                <p>YEARS</p>
+            </div>   
+            <div class="col-md-3 counter-box">
+               <div class="iconbox"><i class="fa fa-users" aria-hidden="true"></i></div>
+            <p class="counter">140</p>
+                <p>MEMBERS</p>
+            </div>   
+            <div class="col-md-3 counter-box">
+               <div class="iconbox"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+            <p class="counter">212</p>
+                <p>PROJECTS</p>
+            </div>   
+        </div>
+        </div>
+        <!---Counter----->
+      <script src="jquery.counterup.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script>
+        jQuery(document).ready(function( $ )
+        {
+            $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+            });
+        });
+        </script>
+    </body>
+    
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./ach.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    h4{
+        color: white;
+        padding-top: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .counter-section{
+        margin: 10% auto;
+        color: #fff;
+    }
+    .iconbox{
+        border: 1px solid #fff;
+        height: 100px;
+        width: 100px;
+        margin: 20px auto;
+        transform: rotate(45deg);
+    }
+    .iconbox .fa{
+        font-size: 40px;
+        margin: 25px auto;
+        color: #ffc800;
+        transform: rotate(-45deg);
+    }
+    .counter-box{
+        font-size: 2px;
+    }
+    .counter-box .counter{
+        font-size: 80px;
+    }
+    
+</style>
